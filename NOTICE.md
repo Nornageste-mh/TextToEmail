@@ -28,14 +28,14 @@ version was produced or endorsed by the original author.
 2. 非官方声明 / Unofficial Project
 ----------------------------------
 
-本软件是非官方的第三方无障碍辅助项目，与本软件所适配的游戏、软件、平台
-及其开发商、发行商、版权方不存在任何隶属、合作、赞助、授权或背书关系。
-相关商标、作品名称与内容的全部权利归各自权利人所有。
+本软件是非官方的第三方无障碍辅助工具，与任何电信运营商、邮件服务商、
+设备厂商、应用分发平台及其关联公司不存在任何隶属、合作、赞助、授权或
+背书关系。相关商标与名称的全部权利归各自权利人所有。
 
-This is an unofficial, third-party accessibility project. It is not
-affiliated with, authorized by, sponsored by, or endorsed by any game,
-software, platform, developer, or publisher that it is designed to work with.
-All trademarks and content remain the property of their respective owners.
+This is an unofficial, third-party accessibility tool. It is not affiliated
+with, authorized by, sponsored by, or endorsed by any carrier, email
+provider, device manufacturer, or app distribution platform. All trademarks
+remain the property of their respective owners.
 
 3. 免责与责任限制 / Disclaimer and Limitation of Liability
 ----------------------------------------------------------
@@ -44,12 +44,15 @@ All trademarks and content remain the property of their respective owners.
 最大范围内，作者与贡献者对因使用或无法使用本软件而产生的任何直接、间接、
 附带、特殊、惩罚性或后果性损害均不承担责任。这包括但不限于：
 
-  (a) 游戏存档损坏、丢失或无法读取，游戏无法启动、崩溃或数据异常；
-  (b) 游戏账号被限制、封禁，或游戏服务条款、最终用户许可协议被认定违反；
-  (c) 与游戏开发商、发行商、平台运营方或任何第三方之间产生的争议、
+  (a) 短讯转发失败、延迟、漏转或误转，应用无法启动、崩溃或数据异常；
+  (b) 邮箱账号或设备被限制、停用，或电信运营商、邮件服务商的服务条款、
+      最终用户许可协议被认定违反；
+  (c) 短讯内容经第三方邮件服务传输或存储而引发的隐私泄露、越权访问或
+      其他后果（本软件不控制该服务的安全性）；
+  (d) 与电信运营商、邮件服务商、平台运营方或任何第三方之间产生的争议、
       索赔、诉讼、禁令或任何形式的损失；
-  (d) 设备损坏、系统故障、数据丢失或其他财产损失；
-  (e) 第三方组件自身的许可瑕疵、权利主张或由此引发的任何责任。
+  (e) 设备损坏、系统故障、数据丢失或其他财产损失；
+  (f) 第三方组件自身的许可瑕疵、权利主张或由此引发的任何责任。
 
 是否使用本软件由你自行决定并自行承担全部风险。你应自行确认在当地法律及
 相关服务条款下使用本软件是否合规。
@@ -58,10 +61,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE
 MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS AND CONTRIBUTORS
 SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
 OR CONSEQUENTIAL DAMAGES ARISING FROM THE USE OF OR INABILITY TO USE THE
-SOFTWARE. THIS INCLUDES, WITHOUT LIMITATION: SAVE DATA LOSS OR CORRUPTION;
-GAME OR SOFTWARE FAILURE; ACCOUNT RESTRICTION OR BAN; ANY DISPUTE, CLAIM, OR
-ACTION BY A GAME DEVELOPER, PUBLISHER, PLATFORM, OR OTHER THIRD PARTY; AND ANY
-DEFECT IN THIRD-PARTY COMPONENTS. YOU USE THIS SOFTWARE AT YOUR OWN RISK.
+SOFTWARE. THIS INCLUDES, WITHOUT LIMITATION: FAILED, DELAYED, MISSED, OR
+MISDIRECTED MESSAGE FORWARDING; APPLICATION OR DEVICE FAILURE; EMAIL ACCOUNT
+RESTRICTION OR SUSPENSION; DISCLOSURE OR UNAUTHORIZED ACCESS ARISING FROM
+TRANSMISSION OF MESSAGE CONTENT THROUGH A THIRD-PARTY EMAIL SERVICE; ANY
+DISPUTE, CLAIM, OR ACTION BY A CARRIER, EMAIL PROVIDER, PLATFORM, OR OTHER
+THIRD PARTY; AND ANY DEFECT IN THIRD-PARTY COMPONENTS. YOU USE THIS SOFTWARE
+AT YOUR OWN RISK.
 
 4. 第三方组件 / Third-Party Components
 --------------------------------------
@@ -81,8 +87,13 @@ notices and license texts must be preserved.
 
 | 组件 | 许可 | 权利人 | 说明 |
 |---|---|---|---|
-| Jakarta Mail | EPL-2.0 或 GPL-2.0+CPE（双许可） | Eclipse Foundation | 以依赖形式引入，源码不随仓库分发 |
-| AndroidX / Kotlin 标准库 | Apache-2.0 | Google / JetBrains | 同上 |
+| Jakarta Mail（`com.sun.mail:jakarta.mail:2.0.1`） | EPL-2.0 或 GPL-2.0+CPE（双许可） | Eclipse Foundation | 以依赖形式引入，源码不随仓库分发 |
+| AndroidX / Material Components | Apache-2.0 | Google | 同上 |
+| Kotlin 标准库 / kotlinx.coroutines | Apache-2.0 | JetBrains | 同上 |
+| Gson（`com.google.code.gson:gson:2.10.1`） | Apache-2.0 | Google | 同上 |
+| Shizuku（`dev.rikka.shizuku:api`、`:provider:13.1.5`） | Apache-2.0 | RikkaApps | 同上 |
+| flexmark-java（`com.vladsch.flexmark:flexmark*:0.64.8`） | **BSD-2-Clause** | Atlassian Pty Ltd / Vladimir Schneider | 同上，BSD-2-Clause 要求随二进制保留版权声明 |
+| JUnit 4 / `androidx.test.ext:junit` | EPL-1.0 / Apache-2.0 | JUnit 团队 / Google | **仅测试依赖，不随应用分发** |
 
 分发本软件时，须保留上述组件的原始版权声明与许可文本。若你重新分发本项目的
 构建产物，请自行确认已满足全部第三方许可的署名、附随与源码提供要求。
